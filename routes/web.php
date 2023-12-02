@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Backend\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +19,19 @@ Route::get('/', function () {
     return view('frontend.pages.home');
 });
 
-Route::get('admin', function () {
-    return view('backend.pages.dashboard');
+/*Admin Auth routes */
+Route::prefix('admin/')->group(function(){
+    Route::get('login', [LoginController::class, 'loginPage'])->name('admin.loginpage');
+    Route::post('login', [LoginController::class, 'login'])->name('admin.login');
+
+
+    Route::middleware(['auth'])->group(function(){
+        Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
+        Route::get('logout', [LoginController::class, 'logout'])->name('admin.logout');
+
+    });
+
+
+
 });
+/*Admin Auth routes */

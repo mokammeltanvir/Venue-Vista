@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Backend\LocationController;
 use App\Http\Controllers\Backend\DashboardController;
 
 /*
@@ -28,8 +29,11 @@ Route::prefix('admin/')->group(function(){
     Route::middleware(['auth'])->group(function(){
         Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('admin.dashboard');
         Route::get('logout', [LoginController::class, 'logout'])->name('admin.logout');
-
     });
+
+    // * Resource Controller */
+    Route::resource('location', LocationController::class);
+
 
 
 

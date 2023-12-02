@@ -25,19 +25,20 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#categories" data-href="">
+                            <a href="#locations" data-href="">
                                 <i data-cs-icon="cupcake" class="icon" data-cs-size="18"></i>
-                                <span class="label">Categories</span>
+
+                                <span class="label">Locations</span>
                             </a>
-                            <ul id="categories">
+                            <ul id="locations">
                                 <li>
-                                    <a href="#">
-                                        <span class="label">Categories</span>
+                                    <a href="{{route('location.index')}}">
+                                        <span class="label">Locations</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <span class="label">Add Category</span>
+                                    <a href="{{route('location.create')}}">
+                                        <span class="label">Add Location</span>
                                     </a>
                                 </li>
                             </ul>

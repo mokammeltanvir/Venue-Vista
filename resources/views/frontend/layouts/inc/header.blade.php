@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-12 logo">
                     <div class="navbar-brand">
-                        <a href="/"><img src="{{ asset('assets/frontend')}}/images/logo.png" alt="Wedding Vendors" class="img-responsive"></a>
+                        <a href="/"><img src="{{ asset('assets/frontend')}}/images/venuelogo.png" alt="Wedding Vendors" class="img-responsive"></a>
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-12">

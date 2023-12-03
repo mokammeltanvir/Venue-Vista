@@ -3,7 +3,7 @@
 
 @section('content')
 <!-- Slider -->
-@include('frontend.layouts.inc.slider')
+@include('frontend.pages.widgets.slider')
 <!-- /.End of Slider -->
 
 <div class="section-space80">
@@ -176,64 +176,9 @@
         </div>
     </div>
 </div>
-<div class="section-space80">
-    <!-- Real Weddings -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title mb60 text-center">
-                    <h1>Be inspired by Real Weddings</h1>
-                    <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="real-wedding-block mb30">
-                    <!-- real wedding block -->
-                    <div class="real-wedding-img">
-                        <a href="#"><img src="{{ asset('assets/frontend')}}/images/real-wedding-1.jpg" alt="" class="img-responsive"></a>
-                    </div>
-                    <div class="real-wedding-info well-box text-center">
-                        <h2 class="real-wedding-title"><a href="#" class="title">Caitlin &amp; Hentze</a></h2>
-                        <p class="real-wed-meta"><span class="wed-day-meta"><i class="icon-wedding-day icon-size-18"></i> 5 june,2016</span> <span class="wed-location-meta"> <i class="icon-wedding-location icon-size-18"></i> Surat, India</span> </p>
-                    </div>
-                </div>
-                <!-- /.real wedding block -->
-            </div>
-            <div class="col-md-4">
-                <div class="real-wedding-block mb30">
-                    <!-- real wedding block -->
-                    <div class="real-wedding-img">
-                        <a href="#"><img src="{{ asset('assets/frontend')}}/images/real-wedding-2.jpg" alt="" class="img-responsive"></a>
-                    </div>
-                    <div class="real-wedding-info well-box text-center">
-                        <h2 class="real-wedding-title"><a href="#" class="title">Lewers &amp; Isabella</a></h2>
-                        <p class="real-wed-meta"><span class="wed-day-meta"><i class="icon-wedding-day icon-size-18"></i> 4 june,2016</span> <span class="wed-location-meta"> <i class="icon-wedding-location icon-size-18"></i> Surat, India</span> </p>
-                    </div>
-                </div>
-                <!-- /.real wedding block -->
-            </div>
-            <div class="col-md-4">
-                <div class="real-wedding-block mb30">
-                    <!-- real wedding block -->
-                    <div class="real-wedding-img">
-                        <a href="#"><img src="{{ asset('assets/frontend')}}/images/real-wedding-3.jpg" alt="" class="img-responsive"></a>
-                    </div>
-                    <div class="real-wedding-info well-box text-center">
-                        <h2 class="real-wedding-title"><a href="#" class="title">Castleton &amp; Sean </a></h2>
-                        <p class="real-wed-meta"><span class="wed-day-meta"><i class="icon-wedding-day icon-size-18"></i> 3 june,2016</span> <span class="wed-location-meta"> <i class="icon-wedding-location icon-size-18"></i> Surat, India</span> </p>
-                    </div>
-                </div>
-                <!-- /.real wedding block -->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center"><a href="#" class="btn btn-default btn-lg">View More Inspirations</a></div>
-        </div>
-    </div>
-</div>
-<!-- /.Real Weddings -->
+<!-- Testimonial Section -->
+@include('frontend.pages.widgets.testimonial')
+<!-- /. Testimonial Section -->
 <section class="module parallax parallax-2">
     <div class="container">
         <div class="row">

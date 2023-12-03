@@ -7,19 +7,19 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#products" data-href="">
+                            <a href="#venues" data-href="">
                                 <i data-cs-icon="cupcake" class="icon" data-cs-size="18"></i>
-                                <span class="label">Products</span>
+                                <span class="label">Venue Halls</span>
                             </a>
-                            <ul id="products">
+                            <ul id="venues">
                                 <li>
                                     <a href="#">
-                                        <span class="label">Product List</span>
+                                        <span class="label">Venue List</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <span class="label">Add New Product</span>
+                                        <span class="label">Add New Venue</span>
                                     </a>
                                 </li>
                             </ul>

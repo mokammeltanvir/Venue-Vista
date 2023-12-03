@@ -15,9 +15,21 @@ use App\Http\Controllers\Backend\DashboardController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+// * Frontend Routes */
 Route::get('/', function () {
     return view('frontend.pages.home');
+});
+Route::get('/about', function () {
+    return view('frontend.pages.about');
+});
+Route::get('/contact', function () {
+    return view('frontend.pages.contact');
+});
+Route::get('/venue-list', function () {
+    return view('frontend.pages.venue-list');
+});
+Route::get('/venue-details', function () {
+    return view('frontend.pages.venue-details');
 });
 
 /*Admin Auth routes */

@@ -38,7 +38,7 @@
                 <div class="real-wedding-block mb30">
                     <!-- real wedding block -->
                     <div class="real-wedding-img">
-                        <a href="#"><img src="images/real-wedding-1.jpg" alt="" class="img-responsive"></a>
+                        <a href="#"><img src="{{asset('assets/frontend')}}/images/real-wedding-1.jpg" alt="" class="img-responsive"></a>
                     </div>
                     <div class="real-wedding-info well-box text-center">
                         <h2 class="real-wedding-title"><a href="#" class="title">Caitlin &amp; Hentze</a></h2>
@@ -53,7 +53,7 @@
                 <div class="real-wedding-block mb30">
                     <!-- real wedding block -->
                     <div class="real-wedding-img">
-                        <a href="#"><img src="images/real-wedding-2.jpg" alt="" class="img-responsive"></a>
+                        <a href="#"><img src="{{asset('assets/frontend')}}/images/real-wedding-2.jpg" alt="" class="img-responsive"></a>
                     </div>
                     <div class="real-wedding-info well-box text-center">
                         <h2 class="real-wedding-title"><a href="#" class="title">Lewers &amp; Isabella</a></h2>
@@ -68,7 +68,7 @@
                 <div class="real-wedding-block mb30">
                     <!-- real wedding block -->
                     <div class="real-wedding-img">
-                        <a href="#"><img src="images/real-wedding-3.jpg" alt="" class="img-responsive"></a>
+                        <a href="#"><img src="{{asset('assets/frontend')}}/images/real-wedding-3.jpg" alt="" class="img-responsive"></a>
                     </div>
                     <div class="real-wedding-info well-box text-center">
                         <h2 class="real-wedding-title"><a href="#" class="title">Castleton &amp; Sean </a></h2>
@@ -83,7 +83,7 @@
                 <div class="real-wedding-block mb30">
                     <!-- real wedding block -->
                     <div class="real-wedding-img">
-                        <a href="#"><img src="images/real-wedding-4.jpg" alt="" class="img-responsive"></a>
+                        <a href="#"><img src="{{asset('assets/frontend')}}/images/real-wedding-4.jpg" alt="" class="img-responsive"></a>
                     </div>
                     <div class="real-wedding-info well-box text-center">
                         <h2 class="real-wedding-title"><a href="#" class="title">Merry & Generic</a></h2>
@@ -98,7 +98,7 @@
                 <div class="real-wedding-block mb30">
                     <!-- real wedding block -->
                     <div class="real-wedding-img">
-                        <a href="#"><img src="images/real-wedding-5.jpg" alt="" class="img-responsive"></a>
+                        <a href="#"><img src="{{asset('assets/frontend')}}/images/real-wedding-5.jpg" alt="" class="img-responsive"></a>
                     </div>
                     <div class="real-wedding-info well-box text-center">
                         <h2 class="real-wedding-title"><a href="#" class="title">Claudia & Purves</a></h2>
@@ -113,7 +113,7 @@
                 <div class="real-wedding-block mb30">
                     <!-- real wedding block -->
                     <div class="real-wedding-img">
-                        <a href="#"><img src="images/real-wedding-6.jpg" alt="" class="img-responsive"></a>
+                        <a href="#"><img src="{{asset('assets/frontend')}}/images/real-wedding-6.jpg" alt="" class="img-responsive"></a>
                     </div>
                     <div class="real-wedding-info well-box text-center">
                         <h2 class="real-wedding-title"><a href="#" class="title">Alana & Hopley</a></h2>

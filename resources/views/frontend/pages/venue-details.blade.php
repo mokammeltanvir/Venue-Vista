@@ -28,7 +28,7 @@
     </div>
     <div class="container venue-header">
         <div class="row venue-head">
-            <div class="col-md-12 title"> <a href="#" class="label-primary">Boutique</a>
+            <div class="col-md-12 title"> <a href="#" class="label-primary">Available</a>
                 <h1>Wedding Venue Title Goes Here</h1>
                 <p class="location"><i class="fa fa-map-marker"></i>110 Pennington Street, London E1W 2BB</p>
             </div>

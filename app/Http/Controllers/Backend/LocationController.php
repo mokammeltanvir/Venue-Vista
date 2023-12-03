@@ -46,7 +46,7 @@ class LocationController extends Controller
 
         $this->image_upload($request, $location->id);
 
-        Toastr::success('Data Stored Successfully!!');
+        Toastr::success('Data Added Successfully!!');
         return redirect()->route('location.index');
     }
 

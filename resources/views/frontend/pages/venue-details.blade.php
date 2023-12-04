@@ -35,7 +35,7 @@
             <div class="col-md-8 rating-box">
                 <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> </div>
             </div>
-            <div class="col-md-4 venue-action"> <a href="#googleMap" class="btn btn-primary">VIEW MAP</a> <a href="#inquiry" class="btn btn-default">Book Venue</a> </div>
+
         </div>
     </div>
     <div class="main-container">
@@ -81,72 +81,7 @@
                                 <div class="pricebox">
                                     <div>Avg price:</div>
                                     <span class="price">$39.50</span></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="well-box" id="inquiry">
-                                <h2>Send Enquiry to Vendor</h2>
-                                <p>Fill in your details and a Venue Specialist will get back to you shortly.</p>
-                                <form class="">
-                                    <!-- Text input-->
-                                    <div class="form-group">
-                                        <label class="control-label" for="name-one">Name:<span class="required">*</span></label>
-                                        <div class="">
-                                            <input id="name-one" name="name" type="text" placeholder="Name" class="form-control input-md" required>
-                                        </div>
-                                    </div>
-                                    <!-- Text input-->
-                                    <div class="form-group">
-                                        <label class="control-label" for="phone">Phone:<span class="required">*</span></label>
-                                        <div class="">
-                                            <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control input-md" required>
-                                            <span class="help-block"> </span> </div>
-                                    </div>
-                                    <!-- Text input-->
-                                    <div class="form-group">
-                                        <label class="control-label" for="email-one">E-Mail:<span class="required">*</span></label>
-                                        <div class="">
-                                            <input id="email-one" name="email" type="text" placeholder="E-Mail" class="form-control input-md" required>
-                                        </div>
-                                    </div>
-                                    <!-- Select Basic -->
-                                    <div class="default-calender">
-                                        <div class="form-group">
-                                            <label class="control-label" for="weddingdate">Wedding Date<span class="required">*</span></label>
-                                            <div class="">
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" id="weddingdate" placeholder="Wedding Date">
-                                                    <span class="input-group-addon" id="basic-addon2"><i class="fa fa-calendar"></i></span> </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="control-label" for="guest">Number of Guests:<span class="required">*</span></label>
-                                        <div class="">
-                                            <select id="guest" name="guest" class="form-control">
-                                                <option value="35 to 50">35 to 50</option>
-                                                <option value="50  to 65">50 to 65</option>
-                                                <option value="65 to 85">65 to 85</option>
-                                                <option value="85 to 105">85 to 105</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <!-- Multiple Radios -->
-                                    <div class="form-group">
-                                        <label class="control-label">Send me info via</label>
-                                        <div class="checkbox checkbox-success">
-                                            <input type="checkbox" name="checkbox" id="checkbox-0" value="1" class="styled">
-                                            <label for="checkbox-0" class="control-label"> E-Mail </label>
-                                        </div>
-                                        <div class="checkbox checkbox-success">
-                                            <input type="checkbox" name="checkbox" id="checkbox-1" value="2" class="styled">
-                                            <label for="checkbox-1" class="control-label"> Need Call back </label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <button name="submit" class="btn btn-default btn-lg btn-block">Book MY Venue now</button>
-                                    </div>
-                                </form>
+                                    <button name="submit" class="btn btn-default btn-lg btn-block">Book MY Venue now</button>
                             </div>
                         </div>
 

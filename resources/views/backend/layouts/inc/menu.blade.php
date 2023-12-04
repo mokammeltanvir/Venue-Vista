@@ -13,12 +13,12 @@
                             </a>
                             <ul id="venues">
                                 <li>
-                                    <a href="#">
+                                    <a href="{{route('venue.index')}}">
                                         <span class="label">Venue List</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="{{route('venue.create')}}">
                                         <span class="label">Add New Venue</span>
                                     </a>
                                 </li>

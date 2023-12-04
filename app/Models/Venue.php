@@ -2,18 +2,25 @@
 
 namespace App\Models;
 
+use App\Models\VenueImage;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Location extends Model
+class Venue extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $guarded = ['id'];
 
-    public function venues()
+
+    public function location()
     {
-        return $this->hasMany(Venue::class, 'location_id', 'id');
+        return $this->belongsTo(Location::class, 'location_id', 'id');
+    }
+
+    public function venueImages()
+    {
+        return $this->hasMany(VenueImage::class);
     }
 }

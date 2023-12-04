@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Backend\VenueController;
 use App\Http\Controllers\Backend\LocationController;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\Backend\TestimonialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,7 @@ Route::prefix('admin/')->group(function(){
     // * Resource Controller */
     Route::resource('location', LocationController::class);
     Route::resource('venue', VenueController::class);
+    Route::resource('testimonial', TestimonialController::class);
 
 
 

@@ -50,12 +50,12 @@
                             </a>
                             <ul id="testimonials">
                                 <li>
-                                    <a href="#">
+                                    <a href="{{route('testimonial.index')}}">
                                         <span class="label">Clients Testimonials</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="{{route('testimonial.create')}}">
                                         <span class="label">Add Testimonial</span>
                                     </a>
                                 </li>

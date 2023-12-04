@@ -74,103 +74,152 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="vendor-total-list mb30">
-                    <!-- vendor-total-list -->
-                    <div class="vendor-total-thumb">
-                        <!-- vendor-total-thumb -->
-                        <a href="#"><img src="{{ asset('assets/frontend')}}/images/vendor-total-thumb-1.jpg" class="img-responsive" alt=""></a>
-                    </div>
-                    <!-- /.vendor-total-thumb -->
-                    <div class="well-box vendor-total-info">
-                        <!-- vendor-total-info -->
-                        <h2 class="vendor-total-title"><a href="#" class="title">Wedding Venues </a><span class="badge badge-primary">12+</span> </h2>
-                    </div>
-                    <!-- /.vendor-total-info -->
+            <div class="col-md-4 vendor-box">
+                <!-- venue box start-->
+                <div class="vendor-image">
+                    <!-- venue pic -->
+                    <a href="#"><img src="{{asset('assets/frontend')}}/images/vendor-1.jpg" alt="wedding venue" class="img-responsive"></a>
+                    <div class="favourite-bg"><a href="#" class=""><i class="fa fa-heart"></i></a></div>
                 </div>
-                <!-- /.vendor-total-list -->
-            </div>
-            <div class="col-md-4">
-                <div class="vendor-total-list mb30">
-                    <!-- vendor-total-list -->
-                    <div class="vendor-total-thumb">
-                        <!-- vendor-total-thumb -->
-                        <a href="#"><img src="{{ asset('assets/frontend')}}/images/vendor-total-thumb-2.jpg" class="img-responsive" alt=""></a>
+                <!-- /.venue pic -->
+                <div class="vendor-detail">
+                    <!-- venue details -->
+                    <div class="caption">
+                        <!-- caption -->
+                        <h2><a href="#" class="title">Venue Vendor Title</a></h2>
+                        <p class="location"><i class="fa fa-map-marker"></i> Street Address, Name of Town, 12345, Country.</p>
+                        <div class="rating "> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <span class="rating-count">(22)</span> </div>
                     </div>
-                    <!-- /.vendor-total-thumb -->
-                    <div class="well-box vendor-total-info">
-                        <!-- vendor-total-info -->
-                        <h2 class="vendor-total-title"><a href="#" class="title">Wedding Cakes </a><span class="badge badge-primary">10+</span> </h2>
+                    <!-- /.caption -->
+                    <div class="vendor-price">
+                        <div class="price">$390 - $600</div>
                     </div>
-                    <!-- /.vendor-total-info -->
                 </div>
-                <!-- /.vendor-total-list -->
+                <!-- venue details -->
             </div>
-            <div class="col-md-4">
-                <div class="vendor-total-list mb30">
-                    <!-- vendor-total-list -->
-                    <div class="vendor-total-thumb">
-                        <!-- vendor-total-thumb -->
-                        <a href="#"><img src="{{ asset('assets/frontend')}}/images/vendor-total-thumb-3.jpg" class="img-responsive" alt=""></a>
-                    </div>
-                    <!-- /.vendor-total-thumb -->
-                    <div class="well-box vendor-total-info">
-                        <!-- vendor-total-info -->
-                        <h2 class="vendor-total-title"><a href="#" class="title">Wedding Venues </a><span class="badge badge-primary">12+</span> </h2>
-                    </div>
-                    <!-- /.vendor-total-info -->
+            <!-- /.venue box start-->
+            <div class="col-md-4 vendor-box">
+                <!-- venue box start-->
+                <div class="vendor-image">
+                    <!-- venue pic -->
+                    <a href="#"><img src="{{asset('assets/frontend')}}/images/vendor-2.jpg" alt="wedding venue" class="img-responsive"></a>
+                    <div class="favourite-bg"><a href="#" class=""><i class="fa fa-heart"></i></a></div>
                 </div>
-                <!-- /.vendor-total-list -->
-            </div>
-            <div class="col-md-4">
-                <div class="vendor-total-list mb30">
-                    <!-- vendor-total-list -->
-                    <div class="vendor-total-thumb">
-                        <!-- vendor-total-thumb -->
-                        <a href="#"><img src="{{ asset('assets/frontend')}}/images/vendor-total-thumb-4.jpg" class="img-responsive" alt=""></a>
+                <!-- /.venue pic -->
+                <div class="vendor-detail">
+                    <!-- venue details -->
+                    <div class="caption">
+                        <!-- caption -->
+                        <h2><a href="#" class="title">Venue Vendor Title</a></h2>
+                        <p class="location"><i class="fa fa-map-marker"></i> Street Address, Name of Town, 12345, Country.</p>
+                        <div class="rating "> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <span class="rating-count">(22)</span> </div>
                     </div>
-                    <!-- /.vendor-total-thumb -->
-                    <div class="well-box vendor-total-info">
-                        <!-- vendor-total-info -->
-                        <h2 class="vendor-total-title"><a href="#" class="title">Wedding Venues </a><span class="badge badge-primary">12+</span> </h2>
+                    <!-- /.caption -->
+                    <div class="vendor-price">
+                        <div class="price">$390 - $600</div>
                     </div>
-                    <!-- /.vendor-total-info -->
                 </div>
-                <!-- /.vendor-total-list -->
+                <!-- venue details -->
             </div>
-            <div class="col-md-4">
-                <div class="vendor-total-list mb30">
-                    <!-- vendor-total-list -->
-                    <div class="vendor-total-thumb">
-                        <!-- vendor-total-thumb -->
-                        <a href="#"><img src="{{ asset('assets/frontend')}}/images/vendor-total-thumb-5.jpg" class="img-responsive" alt=""></a>
-                    </div>
-                    <!-- /.vendor-total-thumb -->
-                    <div class="well-box vendor-total-info">
-                        <!-- vendor-total-info -->
-                        <h2 class="vendor-total-title"><a href="#" class="title">Wedding Venues </a><span class="badge badge-primary">12+</span> </h2>
-                    </div>
-                    <!-- /.vendor-total-info -->
+            <!-- /.venue box start-->
+            <div class="col-md-4 vendor-box">
+                <!-- venue box start-->
+                <div class="vendor-image">
+                    <!-- venue pic -->
+                    <a href="#"><img src="{{asset('assets/frontend')}}/images/vendor-3.jpg" alt="wedding venue" class="img-responsive"></a>
+                    <div class="favourite-bg"><a href="#" class=""><i class="fa fa-heart"></i></a></div>
                 </div>
-                <!-- /.vendor-total-list -->
-            </div>
-            <div class="col-md-4">
-                <div class="vendor-total-list mb30">
-                    <!-- vendor-total-list -->
-                    <div class="vendor-total-thumb">
-                        <!-- vendor-total-thumb -->
-                        <a href="#"><img src="{{ asset('assets/frontend')}}/images/vendor-total-thumb-6.jpg" class="img-responsive" alt=""></a>
+                <!-- /.venue pic -->
+                <div class="vendor-detail">
+                    <!-- venue details -->
+                    <div class="caption">
+                        <!-- caption -->
+                        <h2><a href="#" class="title">Venue Vendor Title</a></h2>
+                        <p class="location"><i class="fa fa-map-marker"></i> Street Address, Name of Town, 12345, Country.</p>
+                        <div class="rating "> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <span class="rating-count">(22)</span> </div>
                     </div>
-                    <!-- /.vendor-total-thumb -->
-                    <div class="well-box vendor-total-info">
-                        <!-- vendor-total-info -->
-                        <h2 class="vendor-total-title"><a href="#" class="title">Wedding Venues </a><span class="badge badge-primary">12+</span> </h2>
+                    <!-- /.caption -->
+                    <div class="vendor-price">
+                        <div class="price">$390 - $600</div>
                     </div>
-                    <!-- /.vendor-total-info -->
                 </div>
-                <!-- /.vendor-total-list -->
+                <!-- venue details -->
             </div>
+            <!-- /.venue box start-->
+            <div class="col-md-4 vendor-box">
+                <!-- venue box start-->
+                <div class="vendor-image">
+                    <!-- venue pic -->
+                    <a href="#"><img src="{{asset('assets/frontend')}}/images/vendor-4.jpg" alt="wedding venue" class="img-responsive"></a>
+                    <div class="favourite-bg"><a href="#" class=""><i class="fa fa-heart"></i></a></div>
+                </div>
+                <!-- /.venue pic -->
+                <div class="vendor-detail">
+                    <!-- venue details -->
+                    <div class="caption">
+                        <!-- caption -->
+                        <h2><a href="#" class="title">Venue Vendor Title</a></h2>
+                        <p class="location"><i class="fa fa-map-marker"></i> Street Address, Name of Town, 12345, Country.</p>
+                        <div class="rating "> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <span class="rating-count">(22)</span> </div>
+                    </div>
+                    <!-- /.caption -->
+                    <div class="vendor-price">
+                        <div class="price">$390 - $600</div>
+                    </div>
+                </div>
+                <!-- venue details -->
+            </div>
+            <!-- /.venue box start-->
+            <div class="col-md-4 vendor-box">
+                <!-- venue box start-->
+                <div class="vendor-image">
+                    <!-- venue pic -->
+                    <a href="#"><img src="{{asset('assets/frontend')}}/images/vendor-5.jpg" alt="wedding venue" class="img-responsive"></a>
+                    <div class="favourite-bg"><a href="#" class=""><i class="fa fa-heart"></i></a></div>
+                </div>
+                <!-- /.venue pic -->
+                <div class="vendor-detail">
+                    <!-- venue details -->
+                    <div class="caption">
+                        <!-- caption -->
+                        <h2><a href="#" class="title">Venue Vendor Title</a></h2>
+                        <p class="location"><i class="fa fa-map-marker"></i> Street Address, Name of Town, 12345, Country.</p>
+                        <div class="rating "> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <span class="rating-count">(22)</span> </div>
+                    </div>
+                    <!-- /.caption -->
+                    <div class="vendor-price">
+                        <div class="price">$390 - $600</div>
+                    </div>
+                </div>
+                <!-- venue details -->
+            </div>
+            <!-- /.venue box start-->
+            <div class="col-md-4 vendor-box">
+                <!-- venue box start-->
+                <div class="vendor-image">
+                    <!-- venue pic -->
+                    <a href="#"><img src="{{asset('assets/frontend')}}/images/vendor-6.jpg" alt="wedding venue" class="img-responsive"></a>
+                    <div class="favourite-bg"><a href="#" class=""><i class="fa fa-heart"></i></a></div>
+                </div>
+                <!-- /.venue pic -->
+                <div class="vendor-detail">
+                    <!-- venue details -->
+                    <div class="caption">
+                        <!-- caption -->
+                        <h2><a href="#" class="title">Venue Vendor Title</a></h2>
+                        <p class="location"><i class="fa fa-map-marker"></i> Street Address, Name of Town, 12345, Country.</p>
+                        <div class="rating "> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <span class="rating-count">(22)</span> </div>
+                    </div>
+                    <!-- /.caption -->
+                    <div class="vendor-price">
+                        <div class="price">$390 - $600</div>
+                    </div>
+                </div>
+                <!-- venue details -->
+            </div>
+            <!-- /.venue box start-->
         </div>
+
         <div class="row">
             <div class="col-md-12 text-center"><a href="#" class="btn btn-default btn-lg">View All Vendor</a></div>
         </div>

@@ -177,7 +177,7 @@ return redirect()->route('venue.index');
         $new_photo_name = $venue->id . '.' . $uploaded_photo->getClientOriginalExtension();
         $new_photo_location = $photo_location . $new_photo_name;
 
-        Image::make($uploaded_photo)->resize(2000, 620)->save(base_path($new_photo_location), 40);
+        Image::make($uploaded_photo)->resize(1895, 710)->save(base_path($new_photo_location), 40);
 
         $venue->update([
             'venue_image' => $new_photo_name,
@@ -214,7 +214,7 @@ public function multiple_image__upload($request, $venue_id)
             $new_photo_name = $venue_id . '-' . $flag . '.' . $single_photo->getClientOriginalExtension();
             $new_photo_location = $photo_location . $new_photo_name;
 
-            Image::make($single_photo)->resize(2000, 620)->save(base_path($new_photo_location), 40);
+            Image::make($single_photo)->resize(1895, 710)->save(base_path($new_photo_location), 40);
 
             VenueImage::create([
                 'venue_id' => $venue_id,

@@ -28,4 +28,22 @@ class HomeController extends Controller
         return view('frontend.pages.home', compact('testimonials', 'venues'));
 
     }
+
+    public function venuePage()
+    {
+        $allvenue = Venue::where('is_active', 1)
+        ->latest('id')
+        ->select('id','venue_name','venue_slug', 'venue_address', 'venue_price', 'venue_capacity', 'venue_image')
+        ->paginate(9);
+
+        return view('frontend.pages.venue-list', compact('allvenue'));
+    }
+
+    public function venueDetails($venue_slug)
+    {
+        $venue = Venue::where('venue_slug', $venue_slug)->with('location', 'venueImages')->firstOrFail();
+
+        return view('frontend.pages.venue-details', compact('venue'));
+
+    }
 }

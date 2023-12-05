@@ -21,20 +21,18 @@ use App\Http\Controllers\Backend\TestimonialController;
 // * Frontend Routes */
 Route::prefix('')->group(function(){
     Route::get('/', [HomeController::class, 'home'])->name('home');
+    Route::get('/venue', [HomeController::class, 'venuePage'])->name('venue.page');
+    Route::get('/venue-details/{venue_slug}', [HomeController::class, 'venueDetails'])->name('venue.details');
+
+    Route::get('/about', function () {
+        return view('frontend.pages.about');
+    });
+    Route::get('/contact', function () {
+        return view('frontend.pages.contact');
+    });
 });
 
-Route::get('/about', function () {
-    return view('frontend.pages.about');
-});
-Route::get('/contact', function () {
-    return view('frontend.pages.contact');
-});
-Route::get('/venue-list', function () {
-    return view('frontend.pages.venue-list');
-});
-Route::get('/venue-details', function () {
-    return view('frontend.pages.venue-details');
-});
+
 
 /*Admin Auth routes */
 Route::prefix('admin/')->group(function(){

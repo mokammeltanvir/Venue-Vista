@@ -21,8 +21,14 @@
                 </div>
                 <div class="col-md-6 top-links">
                     <ul class="listnone">
-                        <li><a href="login-page.html">Login</a></li>
-                        <li><a href="login-page.html">Registerr</a></li>
+                        @if(Auth::check('is_customer'))
+                        <li><a href="{{route('customer.dashboard')}}">My Account</a></li>
+                        <li><a href="{{route('customer.logout')}}">Logout</a></li>
+                        @else
+                        <li><a href="{{route('login.page')}}">Login</a></li>
+                        <li><a href="{{route('register.page')}}">Registerr</a></li>
+                        @endif
+
                     </ul>
                 </div>
             </div>

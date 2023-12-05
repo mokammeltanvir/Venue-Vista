@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Backend\VenueController;
+use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Backend\LocationController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Backend\TestimonialController;
@@ -18,9 +19,10 @@ use App\Http\Controllers\Backend\TestimonialController;
 |
 */
 // * Frontend Routes */
-Route::get('/', function () {
-    return view('frontend.pages.home');
+Route::prefix('')->group(function(){
+    Route::get('/', [HomeController::class, 'home'])->name('home');
 });
+
 Route::get('/about', function () {
     return view('frontend.pages.about');
 });

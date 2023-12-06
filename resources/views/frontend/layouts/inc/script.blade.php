@@ -6,6 +6,8 @@
 <script src="{{ asset('assets/frontend')}}/js/jquery.flexnav.js" type="text/javascript"></script>
 <script src="{{ asset('assets/frontend')}}/js/navigation.js"></script>
 <script type="text/javascript" src="{{ asset('assets/frontend')}}/js/bootstrap-select.js"></script>
+<script src="{{ asset('assets/frontend')}}/js/jquery.flexnav.js" type="text/javascript"></script>
+
 <!-- slider -->
 <script src="{{ asset('assets/frontend')}}/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="{{ asset('assets/frontend')}}/js/slider.js"></script>

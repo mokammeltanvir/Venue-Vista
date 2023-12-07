@@ -28,6 +28,14 @@ class HomeController extends Controller
         return view('frontend.pages.home', compact('testimonials', 'venues'));
 
     }
+    public function about()
+    {
+        return view('frontend.pages.about');
+    }
+    public function contact()
+    {
+        return view('frontend.pages.contact');
+    }
 
     public function venuePage()
     {

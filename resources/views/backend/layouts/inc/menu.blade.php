@@ -63,18 +63,18 @@
                         </li>
                         <li>
                             <a href="#blog" data-href="">
-                                <i data-cs-icon="cupcake" class="icon" data-cs-size="18"></i>
-                                <span class="label">Blogs</span>
+                                <i data-cs-icon="screen" class="icon" data-cs-size="18"></i>
+                                <span class="label">Hero Slider</span>
                             </a>
                             <ul id="blog">
                                 <li>
                                     <a href="#">
-                                        <span class="label">Blogs List</span>
+                                        <span class="label">Slider List</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <span class="label">Add New Blog</span>
+                                        <span class="label">Add New Slide</span>
                                     </a>
                                 </li>
                             </ul>

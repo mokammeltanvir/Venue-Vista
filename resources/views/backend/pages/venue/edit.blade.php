@@ -166,7 +166,7 @@
                             </div>
 
                             <div class="mt-5">
-                                <button type="submit" class="btn btn-success">Store</button>
+                                <button type="submit" class="btn btn-warning">Update</button>
                             </div>
 
                         </div>

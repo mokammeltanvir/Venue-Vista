@@ -46,7 +46,7 @@
                             <div>Price:</div>
                             <span class="price">৳ {{$venue->venue_price}}</span></div>
                     </div>
-                    <a href="#inquiry" class="btn btn-default btn-lg btn-block">Book Venue</a> </div>
+                    <a href="{{ route('bookings.create', ['venue' => $venue->id]) }}" class="btn btn-default btn-lg btn-block">Book Venue</a> </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
@@ -120,7 +120,6 @@
                     <!-- /.tab content start-->
                 </div>
             </div>
-            @include('frontend.pages.widgets.venuebook')
         </div>
     </div>
    @endsection

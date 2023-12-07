@@ -1,10 +1,12 @@
 <?php
 
+use App\Models\Venue;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Backend\VenueController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Backend\LocationController;
+use App\Http\Controllers\Frontend\BookingController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Frontend\CustomerController;
 use App\Http\Controllers\Backend\TestimonialController;
@@ -23,15 +25,18 @@ use App\Http\Controllers\Frontend\Auth\RegisterController;
 // * Frontend Routes */
 Route::prefix('')->group(function(){
     Route::get('/', [HomeController::class, 'home'])->name('home');
+    Route::get('/about', [HomeController::class, 'about'])->name('about');
+    Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
     Route::get('/venue', [HomeController::class, 'venuePage'])->name('venue.page');
     Route::get('/venue-details/{venue_slug}', [HomeController::class, 'venueDetails'])->name('venue.details');
 
-    Route::get('/about', function () {
-        return view('frontend.pages.about');
-    });
-    Route::get('/contact', function () {
-        return view('frontend.pages.contact');
-    });
+//     Route::get('/venues/{venue}/book', [BookingController::class, 'create'])->name('bookings.create');
+// Route::post('/venues/{venue}/book', [BookingController::class, 'store'])->name('bookings.store');
+
+// View booking form for specific venue
+Route::get('/venues/{venue}/book',[BookingController::class,'create'])->name('bookings.create');
+// Store new booking
+Route::post('/bookings/{venue}', [BookingController::class,'store'])->name('bookings.store');
 
     /*Authentication routes for Customer/Guest */
     Route::get('/register', [RegisterController::class, 'registerPage'])->name('register.page');

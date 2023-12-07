@@ -56,16 +56,6 @@
                             <label class=" control-label" for="phone">Phone <span class="required">*</span></label>
                             <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control input-md" required>
                         </div>
-                        <!-- Select Basic -->
-                        <div class="form-group">
-                            <label class=" control-label" for="category">Category <span class="required">*</span></label>
-                            <select id="category" name="category" class="form-control selectpicker">
-                                <option value="Couple">Couple</option>
-                                <option value="Vendor">Vendor</option>
-                                <option value="Advertisement">Advertisement</option>
-                                <option value="Suggestion">Suggestion</option>
-                            </select>
-                        </div>
                         <!-- Textarea -->
                         <div class="form-group">
                             <label class="  control-label" for="message">Message</label>
@@ -96,14 +86,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="well-box">
-                    <h2>Need Help ?</h2>
-                    <p>Are you an advertiser enquiring about advertising in You &amp; Your Wedding or on weddingvendor? Please <a href="#">click here </a>to contact the advertising team.</p>
-                </div>
-            </div>
         </div>
     </div>
 </div>
-<div class="map" id="googleMap"></div>
 @endsection

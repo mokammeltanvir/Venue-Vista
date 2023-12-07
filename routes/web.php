@@ -3,6 +3,7 @@
 use App\Models\Venue;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Backend\OrderController;
 use App\Http\Controllers\Backend\VenueController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Backend\LocationController;
@@ -11,6 +12,8 @@ use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Frontend\CustomerController;
 use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\Frontend\Auth\RegisterController;
+use App\Http\Controllers\Backend\BookingController as BookingListController;
+use App\Http\Controllers\Backend\CustomerController as BackendCustomerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -68,6 +71,12 @@ Route::prefix('admin/')->group(function(){
         Route::resource('location', LocationController::class);
         Route::resource('venue', VenueController::class);
         Route::resource('testimonial', TestimonialController::class);
+        Route::get('customer-list', [BackendCustomerController::class, 'index'])->name('admin.customerlist');
+
+        Route::get('booking-list', [BookingListController::class, 'index'])->name('admin.bookinglist');
+        Route::post('booking-list/{booking}/approve', [BookingListController::class, 'approve'])->name('admin.bookings.approve');
+        Route::post('booking-list/{booking}/reject', [BookingListController::class, 'reject'])->name('admin.bookings.reject');
+
     });
 });
 /*Admin Auth routes */

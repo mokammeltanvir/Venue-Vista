@@ -18,9 +18,11 @@ class Booking extends Model
         'booking_date',
         'event_name',
         'additional_info',
-        'status',
+        'shift',
         'start_time',
         'end_time',
+        'status',
+
 
     ];
 
@@ -33,4 +35,15 @@ class Booking extends Model
     {
         return $this->belongsTo(Venue::class);
     }
+
+    public function scopeApproved($query)
+    {
+        return $query->where('status', 'approved');
+    }
+
+    public function scopePending($query)
+    {
+        return $query->where('status', 'pending');
+    }
+
 }

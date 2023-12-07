@@ -1,7 +1,7 @@
                 <div class="menu-container flex-grow-1">
                     <ul id="menu" class="menu">
                         <li>
-                            <a href="#">
+                            <a href="{{route('admin.dashboard')}}">
                                 <i data-cs-icon="shop" class="icon" data-cs-size="18"></i>
                                 <span class="label">Dashboard</span>
                             </a>
@@ -83,12 +83,12 @@
                         <li>
                             <a href="#orders" data-href="#">
                                 <i data-cs-icon="cart" class="icon" data-cs-size="18"></i>
-                                <span class="label">Orders</span>
+                                <span class="label">Bookings</span>
                             </a>
                             <ul id="orders">
                                 <li>
-                                    <a href="#">
-                                        <span class="label">Order List</span>
+                                    <a href="{{route('admin.bookinglist')}}">
+                                        <span class="label">Booking List</span>
                                     </a>
                                 </li>
                             </ul>
@@ -100,7 +100,7 @@
                             </a>
                             <ul id="customers">
                                 <li>
-                                    <a href="#">
+                                    <a href="{{route('admin.customerlist')}}">
                                         <span class="label">Customer List</span>
                                     </a>
                                 </li>

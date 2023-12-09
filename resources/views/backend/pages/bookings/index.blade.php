@@ -116,10 +116,11 @@
                                     <td>{{ $booking->booking_date }}</td>
                                     <td>{{ $booking->shift }}</td>
                                     <td>{{ $booking->event_name }}</td>
-                                    <td>{{ $booking->venue->venue_price }}</td>
+                                    <td>{{ $booking->venue->venue_price + $booking->extra_charges }}</td>
                                     <td>
                                         <form action="{{ route('admin.bookings.approve', $booking) }}" method="POST">
                                             @csrf
+                                            <input type="number" name="extra_charges" placeholder="Enter extra charges">
                                             <button type="submit" class="btn btn-sm btn-success">Approve</button>
                                         </form>
                                         <form action="{{ route('admin.bookings.reject', $booking) }}" method="POST">

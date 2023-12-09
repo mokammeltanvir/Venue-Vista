@@ -30,6 +30,7 @@
                                     <li class="list-group-item">
                                         <h5>{{ $booking->venue->name }}</h5>
                                         <p><strong>Status:</strong> {{ $booking->status }}</p>
+                                        <p><strong>Price:</strong> {{ $totalAmount = $booking->venue->venue_price + $booking->extra_charges;}}</p>
                                         <p><strong>Payment Method:</strong> {{ $booking->payment_method }}</p>
                                         <p><strong>Booking Date:</strong> {{ $booking->booking_date }}</p>
                                     </li>

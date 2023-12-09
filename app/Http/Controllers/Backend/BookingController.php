@@ -25,12 +25,24 @@ class BookingController extends Controller
         return view('backend.pages.bookings.show', compact('booking'));
     }
 
-    public function approve(Booking $booking)
-    {
-        $booking->update(['status' => 'approved']);
-        Toastr::success('Booking approved successfully.');
-        return redirect()->back()->with('success', 'Booking approved successfully.');
-    }
+    public function approve(Booking $booking, Request $request)
+{
+    // Validate and sanitize the input
+    $request->validate([
+        'extra_charges' => 'nullable|numeric|min:0',
+    ]);
+
+    $extraCharges = $request->input('extra_charges', 0);
+
+    // Update the booking with the approved status and extra charges
+    $booking->update([
+        'status' => 'approved',
+        'extra_charges' => $extraCharges,
+    ]);
+
+    Toastr::success('Booking approved successfully.');
+    return redirect()->back()->with('success', 'Booking approved successfully.');
+}
 
     public function reject(Booking $booking)
     {

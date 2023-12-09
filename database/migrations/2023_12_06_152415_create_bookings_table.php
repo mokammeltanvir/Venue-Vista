@@ -25,6 +25,7 @@ return new class extends Migration
             $table->time('end_time');
             $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
             $table->enum('payment_status', ['pending', 'paid'])->default('pending');
+            $table->decimal('extra_charges', 8, 2)->default(0);
             $table->string('payment_method')->nullable();
             $table->string('payment_id')->nullable();
             $table->timestamps();

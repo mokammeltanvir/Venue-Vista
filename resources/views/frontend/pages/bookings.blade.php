@@ -3,15 +3,11 @@
 @section('title', 'Bookings')
 
 @section('content')
-    <div class="container">
+    <div class="container mt-5">
         <form method="POST" action="{{ route('bookings.store', ['venue' => $venueId]) }}">
             @csrf
 
-            <div class="form-group">
-                <label for="venue_id">Venue:</label
-                <input type="text" class="form-control" id="venue_id" name="venue_id" value="{{ $venue->vanue_name }}" readonly>
-                <input type="hidden" name="venue_id" value="{{ $venueId }}">
-            </div>
+            <input type="hidden" name="venue_id" value="{{ $venueId }}">
 
             <div class="form-group">
                 <label for="booking_date">Booking Date:</label>
@@ -32,6 +28,21 @@
             </div>
 
             <div class="form-group">
+                <label for="no_of_guests">Number of Guests:</label>
+                <input type="number" class="form-control" id="no_of_guests" name="no_of_guests" value="{{ old('no_of_guests') }}" min="1">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Services:</label>
+                @foreach ($services as $key => $service)
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="services[]" value="{{ $key }}" id="{{ $key }}">
+                    <label class="form-check-label" for="{{ $key }}">{{ $service }}</label>
+                </div>
+            @endforeach
+            </div>
+
+            <div class="form-group">
                 <label for="additional_info">Additional Information:</label>
                 <textarea name="additional_info" class="form-control" id="additional_info" rows="5">{{ old('additional_info') }}</textarea>
             </div>
@@ -44,6 +55,14 @@
             <div class="form-group">
                 <label for="end_time">End Time:</label>
                 <input type="time" class="form-control" id="end_time" name="end_time" value="{{ old('end_time') }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="payment_method">Payment Method:</label>
+                <select class="form-control" id="payment_method" name="payment_method" required>
+                    <option value="cash" {{ old('payment_method') == 'cash' ? 'selected' : '' }}>Cash</option>
+                    <option value="online" {{ old('payment_method') == 'online' ? 'selected' : '' }}>Online</option>
+                </select>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit Booking Request</button>

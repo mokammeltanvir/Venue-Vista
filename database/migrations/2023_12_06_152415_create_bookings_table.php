@@ -18,10 +18,15 @@ return new class extends Migration
             $table->date('booking_date');
             $table->enum('shift', ['morning', 'evening']);
             $table->string('event_name');
+            $table->json('services')->nullable();
+            $table->integer('no_of_guests')->nullable();
             $table->text('additional_info')->nullable();
             $table->time('start_time');
             $table->time('end_time');
             $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
+            $table->enum('payment_status', ['pending', 'paid'])->default('pending');
+            $table->string('payment_method')->nullable();
+            $table->string('payment_id')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

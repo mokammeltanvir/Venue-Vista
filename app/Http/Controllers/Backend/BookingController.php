@@ -12,12 +12,17 @@ class BookingController extends Controller
 {
     public function index()
     {
-       $venues = Venue::all();
-       $bookings = Booking::with('user', 'venue')
-       ->orderBy('created_at', 'desc') // Adjust the ordering as needed
-       ->paginate(10);
+        $venues = Venue::all();
+        $bookings = Booking::with('user', 'venue')
+            ->orderBy('created_at', 'desc') // Adjust the ordering as needed
+            ->paginate(10);
 
-   return view('backend.pages.bookings.index', compact('bookings', 'venues'));
+        return view('backend.pages.bookings.index', compact('bookings', 'venues'));
+    }
+
+    public function show(Booking $booking)
+    {
+        return view('backend.pages.bookings.show', compact('booking'));
     }
 
     public function approve(Booking $booking)

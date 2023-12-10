@@ -62,7 +62,7 @@
                               <!-- Button-->
                             <div class="form-group">
                                 <button type="submit" class="btn btn-danger">SIGN IN</button>
-                                <a href="#" class="pull-right"> <small>Forgot Password</small></a>
+                                <a href="{{route('reset.password')}}" class="pull-right"> <small>Forgot Password</small></a>
                             </div>
                         </form>
                     </div>

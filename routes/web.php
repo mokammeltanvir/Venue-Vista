@@ -47,6 +47,7 @@ Route::post('/bookings/{venue}', [BookingController::class,'store'])->name('book
     Route::post('/register', [RegisterController::class, 'registerStore'])->name('register.store');
     Route::get('/login', [RegisterController::class, 'loginPage'])->name('login.page');
     Route::post('/login', [RegisterController::class, 'loginStore'])->name('login.store');
+    Route::get('/reset-password', [RegisterController::class, 'resetPassword'])->name('reset.password');
 
     Route::prefix('customer/')->middleware(['auth', 'is_customer'])->group(function(){
         Route::get('dashboard',[CustomerController::class, 'dashboard'])->name('customer.dashboard');

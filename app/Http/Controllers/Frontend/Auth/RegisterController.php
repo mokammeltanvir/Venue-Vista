@@ -78,4 +78,9 @@ class RegisterController extends Controller
 
         return redirect()->route('login.page');
     }
+
+    public function resetPassword()
+    {
+        return view('frontend.pages.auth.reset-password');
+    }
 }

@@ -68,8 +68,9 @@
                                                                                 <th>Services Need</th>
                                                                                 <th>Booking Status</th>
                                                                                 <th>Venue Price</th>
-                                                                                <th>Payment Status</th>
                                                                                 <th>Payment Method</th>
+                                                                                <th>Payment Status</th>
+                                                                                <th>Action</th>
                                                                             </tr>
                                                                         </thead>
                                                                         <tbody>
@@ -95,8 +96,16 @@
                                                         </td>
                                                             <td>{{ $booking->status }}</td>
                                                             <td>{{ $booking->venue->venue_price }}</td>
-                                                            <td>{{ $booking->payment_status }}</td>
                                                             <td>{{ $booking->payment_method }}</td>
+                                                            <td>{{ $booking->payment_status }}</td>
+                                                            @if($booking->payment_status == 'pending')
+                                                            <td>
+                                                <form action="{{ route('admin.bookings.payment.status.approve', $booking )}}" method="POST">
+                                                    @csrf
+                                                <button type="submit" class="btn btn-success show_confirm">Approve Payment</button>
+                                                            </form>
+                                                            @endif
+                                                        </td>
                                                              </tr>
 
                                                                         </tbody>
@@ -163,13 +172,13 @@
                     showCancelButton: true,
                     confirmButtonColor: '#3085d6',
                     cancelButtonColor: '#d33',
-                    confirmButtonText: 'Yes, delete it!'
+                    confirmButtonText: 'Yes, aprove it!'
                 }).then((result) => {
                     if (result.isConfirmed) {
                         form.submit();
                         Swal.fire(
-                            'Deleted!',
-                            'Your file has been deleted.',
+                            'Aproved!',
+                            'Your file has been aproved.',
                             'success'
                         )
                     }

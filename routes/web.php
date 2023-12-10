@@ -89,6 +89,7 @@ Route::prefix('admin/')->group(function(){
         Route::get('booking-list', [BookingListController::class, 'index'])->name('admin.bookinglist');
         Route::post('booking-list/{booking}/approve', [BookingListController::class, 'approve'])->name('admin.bookings.approve');
         Route::post('booking-list/{booking}/reject', [BookingListController::class, 'reject'])->name('admin.bookings.reject');
+        Route::post('booking-list/{booking}/payment-status-approve', [BookingListController::class, 'paymentStatusApprove'])->name('admin.bookings.payment.status.approve');
 
     });
 });

@@ -26,23 +26,23 @@ class BookingController extends Controller
     }
 
     public function approve(Booking $booking, Request $request)
-{
-    // Validate and sanitize the input
-    $request->validate([
-        'extra_charges' => 'nullable|numeric|min:0',
-    ]);
+    {
+        // Validate and sanitize the input
+        $request->validate([
+            'extra_charges' => 'nullable|numeric|min:0',
+        ]);
 
-    $extraCharges = $request->input('extra_charges', 0);
+        $extraCharges = $request->input('extra_charges', 0);
 
-    // Update the booking with the approved status and extra charges
-    $booking->update([
-        'status' => 'approved',
-        'extra_charges' => $extraCharges,
-    ]);
+        // Update the booking with the approved status and extra charges
+        $booking->update([
+            'status' => 'approved',
+            'extra_charges' => $extraCharges,
+        ]);
 
-    Toastr::success('Booking approved successfully.');
-    return redirect()->back()->with('success', 'Booking approved successfully.');
-}
+        Toastr::success('Booking approved successfully.');
+        return redirect()->back()->with('success', 'Booking approved successfully.');
+    }
 
     public function reject(Booking $booking)
     {
@@ -50,4 +50,20 @@ class BookingController extends Controller
         Toastr::success('Booking rejected successfully.');
         return redirect()->back()->with('success', 'Booking rejected successfully.');
     }
+
+    public function destroy(Booking $booking)
+    {
+        $booking->delete();
+        Toastr::success('Booking deleted successfully.');
+        return redirect()->back()->with('success', 'Booking deleted successfully.');
+    }
+
+    public function paymentStatusApprove(Booking $booking)
+    {
+        $booking->update(['payment_status' => 'paid']);
+        Toastr::success('Payment status approved successfully.');
+        return redirect()->back()->with('success', 'Payment status aprove successfully.');
+    }
 }
+
+

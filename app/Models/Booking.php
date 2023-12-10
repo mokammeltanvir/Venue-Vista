@@ -33,9 +33,9 @@ class Booking extends Model
     ];
 
     public function venue()
-    {
-        return $this->belongsTo(Venue::class);
-    }
+{
+    return $this->belongsTo(Venue::class);
+}
 
     public function user()
     {
@@ -55,6 +55,11 @@ class Booking extends Model
     public function getBookingDateAttribute($value)
     {
         return date('d-m-Y', strtotime($value));
+    }
+
+    public function payment()
+    {
+        return $this->hasOne(Payment::class);
     }
 
 }

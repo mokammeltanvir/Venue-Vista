@@ -17,3 +17,5 @@
 <!--Toastr link start-->
 <link rel="stylesheet" href="http://cdn.bootcss.com/toastr.js/latest/css/toastr.min.css">
 <!--Toastr link end-->
+
+@stack('style')

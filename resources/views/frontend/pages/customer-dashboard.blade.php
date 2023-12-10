@@ -28,11 +28,30 @@
                             <ul class="list-group">
                                 @foreach($bookings as $booking)
                                     <li class="list-group-item">
-                                        <h5>{{ $booking->venue->name }}</h5>
-                                        <p><strong>Status:</strong> {{ $booking->status }}</p>
-                                        <p><strong>Price:</strong> {{ $totalAmount = $booking->venue->venue_price + $booking->extra_charges;}}</p>
-                                        <p><strong>Payment Method:</strong> {{ $booking->payment_method }}</p>
+                                        <h3><strong>Venue Name:</strong> {{ $booking->venue->venue_name }}</h3>
+                                        <p><strong>Venue Address:</strong> {{ $booking->venue->venue_address }}</p>
+
+                                        <p class="text-capitalize"><strong>Booking Status:</strong> {{ $booking->status }}</p>
                                         <p><strong>Booking Date:</strong> {{ $booking->booking_date }}</p>
+                                        <p class="text-capitalize"><strong>Booking Time:</strong> {{ $booking->shift }}</p>
+                                        <p><strong>Venue Price:</strong> ৳ {{ $booking->venue->venue_price}}</p>
+                                        <p><strong>Extra Charges:</strong> ৳ {{ $booking->extra_charges }}</p>
+                                        <hr>
+                                        <p><strong>Total Price:</strong> ৳ {{ $totalAmount = $booking->venue->venue_price + $booking->extra_charges;}}</p>
+
+
+                                        @if($booking->payment_method == 'cash')
+                                            <p><strong>Payment Method: </strong>Cash</p>
+                                        @else
+                                        <strong>Payment Method: </strong>
+<form action="{{route('pay.online')}}" method="POST">
+@csrf
+    <button type="submit" class="btn btn-sm btn-warning">Online Payment</button>
+</form>
+
+                                        @endif
+                                        <p><strong>Payment Status:</strong> {{ $booking->payment_status }}</p>
+
                                     </li>
                                 @endforeach
                             </ul>

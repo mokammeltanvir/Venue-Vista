@@ -10,6 +10,7 @@ use App\Http\Controllers\Backend\LocationController;
 use App\Http\Controllers\Frontend\BookingController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\Frontend\CustomerController;
+use App\Http\Controllers\SslCommerzPaymentController;
 use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\Frontend\Auth\RegisterController;
 use App\Http\Controllers\Backend\BookingController as BookingListController;
@@ -52,6 +53,18 @@ Route::post('/bookings/{venue}', [BookingController::class,'store'])->name('book
         Route::get('logout', [RegisterController::class, 'logout'])->name('customer.logout');
 
     });
+
+
+        // SSLCOMMERZ Start
+
+        Route::post('/pay', [SslCommerzPaymentController::class, 'index'])->name('pay.online');
+
+        Route::post('/success', [SslCommerzPaymentController::class, 'success']);
+        Route::post('/fail', [SslCommerzPaymentController::class, 'fail']);
+        Route::post('/cancel', [SslCommerzPaymentController::class, 'cancel']);
+
+        //SSLCOMMERZ END
+
 
 });
 

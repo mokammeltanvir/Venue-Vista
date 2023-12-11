@@ -21,8 +21,8 @@ class HomeController extends Controller
         // Get all Venue to show in home page
         $venues = Venue::where('is_active', 1)
         ->latest('id')
-        ->limit(6)
-        ->select(['id', 'venue_name', 'venue_address', 'venue_price', 'venue_image'])->get();
+        ->select('id','venue_name','venue_slug', 'venue_address', 'venue_price', 'venue_capacity', 'venue_image')
+        ->paginate(6);
 
         // Return home page
         return view('frontend.pages.home', compact('testimonials', 'venues'));

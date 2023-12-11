@@ -16,7 +16,7 @@
             <div class="col-md-4 vendor-box">
                 <div class="vendor-image">
                     <!-- venue pic -->
-                    <a href="#"><img src="{{asset('uploads/venue_photos')}}/{{$venue->venue_image}}" alt="wedding venue" class="img-responsive"></a>
+                    <a href="{{route('venue.details', ['venue_slug'=> $venue->venue_slug])}}"><img src="{{asset('uploads/venue_photos')}}/{{$venue->venue_image}}" alt="wedding venue" class="img-responsive"></a>
                     <div class="favourite-bg"><a href="#" class=""><i class="fa fa-heart"></i></a></div>
                 </div>
                 <!-- /.venue pic -->
@@ -24,13 +24,18 @@
                     <!-- venue details -->
                     <div class="caption">
                         <!-- caption -->
-                        <h2><a href="#" class="title">{{$venue->venue_name}}</a></h2>
-                        <p class="location"><i class="fa fa-map-marker"></i>{{$venue->venue_address}}</p>
-                        <div class="rating "> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <span class="rating-count"></span> </div>
+                        <h2><a href="{{route('venue.details', ['venue_slug'=> $venue->venue_slug])}}" class="title">{{$venue->venue_name}}</a></h2>
+                        <p class="location"><i class="fa fa-map-marker"></i> {{$venue->venue_address}}</p>
+                        <div class="rating ">
+                            <i class="fa fa-users"></i> Venue Capacity: {{$venue->venue_capacity}}
+                        </div>
                     </div>
                     <!-- /.caption -->
                     <div class="vendor-price">
                         <div class="price">৳ {{$venue->venue_price}}</div>
+                    </div>
+                    <div class="vendor-price">
+                        <a href="{{route('venue.details', ['venue_slug'=> $venue->venue_slug])}}" class="btn btn-primary btn-sm">View Details</a>
                     </div>
                 </div>
                 <!-- venue details -->

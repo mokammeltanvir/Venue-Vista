@@ -107,61 +107,6 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#storefront" data-href="#">
-                                <i data-cs-icon="screen" class="icon" data-cs-size="18"></i>
-                                <span class="label">Storefront</span>
-                            </a>
-                            <ul id="storefront">
-                                <li>
-                                    <a href="#">
-                                        <span class="label">Home</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="label">Filters</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="label">Categories</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="label">Detail</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="label">Cart</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="label">Checkout</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="label">Invoice</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i data-cs-icon="shipping" class="icon" data-cs-size="18"></i>
-                                <span class="label">Shipping</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i data-cs-icon="tag" class="icon" data-cs-size="18"></i>
-                                <span class="label">Coupon Discount</span>
-                            </a>
-                        </li>
-                        <li>
                             <a href="#">
                                 <i data-cs-icon="gear" class="icon" data-cs-size="18"></i>
                                 <span class="label">Settings</span>

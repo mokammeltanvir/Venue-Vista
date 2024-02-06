@@ -30,7 +30,7 @@ class DashboardController extends Controller
 
         $booking_yearwise = array($booking_on_2022, $booking_on_2023, $booking_on_2024);
 
-        return view('backend.pages.Dashboard', compact(
+        return view('backend.pages.dashboard', compact(
             'total_booking_count',
             'all_locations',
             'total_venues',

@@ -1,66 +1,99 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Venue Vista
 
-## About Laravel
+Venue Vista is a web application built with PHP Laravel, MySQL, and front-end technologies like HTML, CSS, JavaScript, and Bootstrap. It serves as a platform for venue booking where users can browse available venues, make bookings, and administrators can manage venues, locations, customers, and booking details.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   User Registration and Authentication: Users can sign up for an account and log in securely.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+-   Venue Browsing: Users can browse through available venues, view details, and make bookings.
+-   Admin Dashboard: Administrators have access to a dashboard where they can manage venues, locations, customers, and booking details.
+-   Venue Creation: Admins can create new venues with details such as capacity, amenities, and pricing.
+-   Location Management: Admins can manage different locations where venues are situated.
+-   Booking Management: Admins have control over booking details, allowing them to view, edit, or delete bookings as necessary.
 
-## Learning Laravel
+## Installation
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+To run Venue Vista locally, follow these steps:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. In your root folder, clone the project file using the command
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```bash
+git clone https://github.com/mokammeltanvir/Venue-Vista.git
+```
 
-## Laravel Sponsors
+2. Open the terminal (bash/cmd). Then go to the project folder using the command
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+```bash
+  cd Venue-Vista
+```
 
-### Premium Partners
+3. Then install the required files and libraries using
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+```sh
+composer install
+```
+
+4. Then create a .env file and generate a key for this project using the command
+
+```sh
+cp .env.example .env
+
+php artisan key:generate
+```
+
+5. Then compile all CSS & JS files together using this command
+
+```sh
+npm install && npm run dev
+```
+
+or
+
+```sh
+yarn install && yarn run dev
+```
+
+6. Create a database in MYSQL and connect it with your project by updating .env file.
+
+7. After connecting the db with the project, then run the command
+
+```sh
+php artisan migrate
+```
+
+```sh
+php artisan db:seed
+```
+
+After completing the migration and seeding of db, you will have 1 System Admin ready for login in this project as 'admin'.
+
+A. Admin -> Admin
+Email -> admin@venuevista.com
+Pass -> admin1234
+
+Finally, we are ready to run our project using this command!
+
+```sh
+php artisan serve
+```
+
+The application should now be accessible at http://localhost:8000.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or create a pull request.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
+
+## Acknowledgements
+
+Special thanks to the Laravel community for their excellent documentation and resources.
+
+##
+
+Feel free to reach out to [mokammeltanvir](https://github.com/mokammeltanvir) for any questions or further assistance. We hope you enjoy using Venue Vista!
